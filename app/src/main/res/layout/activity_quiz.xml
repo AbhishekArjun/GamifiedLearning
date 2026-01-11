@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal"
+    android:background="@drawable/bg_gradient"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:cardElevation="10dp"
+            app:cardCornerRadius="16dp"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/tvTimer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/time_text"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+        </com.google.android.material.card.MaterialCardView>
+
+        <View
+            android:layout_width="16dp"
+            android:layout_height="0dp"/>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:cardElevation="10dp"
+            app:cardCornerRadius="16dp"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/tvScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/score_text"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:cardElevation="14dp"
+        app:cardCornerRadius="24dp"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/tvQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/question_text"
+            android:gravity="center"
+            android:minHeight="100dp"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+    </com.google.android.material.card.MaterialCardView>
+
+    <Button
+        android:id="@+id/btnOption1"
+        style="@style/ThreeDButton"/>
+
+    <Button
+        android:id="@+id/btnOption2"
+        style="@style/ThreeDButton"/>
+
+    <Button
+        android:id="@+id/btnOption3"
+        style="@style/ThreeDButton"/>
+
+    <Button
+        android:id="@+id/btnOption4"
+        style="@style/ThreeDButton"/>
+
+</LinearLayout>
